@@ -27,7 +27,22 @@ html,body{height:100%;margin:0;font-family:"Poppins",system-ui,-apple-system,"Se
 
 /* HERO */
 .hero{height:78vh;min-height:480px;display:flex;align-items:center;justify-content:center;position:relative;background:#000;margin-top:18px;border-radius:12px;overflow:hidden}
-.hero-media{position:absolute;inset:0;background-image:url('assets/hero-bg.jpg');background-size:cover;background-position:center;filter:contrast(.85) saturate(.95);transform:scale(1.02)}
+.hero-media{
+  position:absolute;
+  inset:0;
+  background-image:url("assets/slide1.png"); /* use first slide */
+  background-size: cover;
+  background-position: center;
+  animation: slideShow 18s infinite ease-in-out;
+  filter: contrast(.85) saturate(.95);
+  transform: scale(1.02);
+}
+@keyframes slideShow {
+  0%,33% { background-image: url("assets/slide1.png"); }
+  34%,66% { background-image: url("assets/slide2.png"); }
+  67%,100% { background-image: url("assets/slide3.png"); }
+}
+
 .hero-overlay{position:absolute;inset:0;background:linear-gradient(180deg,rgba(2,2,4,0.45),rgba(2,2,6,0.65))}
 .hero-content{position:relative;z-index:6;padding:36px;text-align:center;color:#fff}
 .hero-title{font-size:44px;color:var(--neon);margin:0}
@@ -105,3 +120,4 @@ body.dark .mobile-menu {
 body.dark .mobile-menu a {
   color: #00eaff;
 }
+
