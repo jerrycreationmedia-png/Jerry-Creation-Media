@@ -34,6 +34,13 @@ html,body{height:100%;margin:0;font-family:"Poppins",system-ui,-apple-system,"Se
 .hero-sub{margin-top:8px;color:rgba(255,255,255,0.9)}
 .hero-cta{margin-top:14px;display:flex;gap:12px;justify-content:center}
 
+@keyframes slideShow {
+  0%,33% { background-image: url("assets/slide1.png"); }
+  34%,66% { background-image: url("assets/slide2.png"); }
+  67%,100% { background-image: url("assets/slide3.png"); }
+}
+
+
 /* panels & sections */
 .panel{background:var(--panel);border-radius:14px;padding:20px;margin:24px 0}
 .about{display:grid;grid-template-columns:1fr 360px;gap:20px;align-items:center}
@@ -105,3 +112,4 @@ body.dark .mobile-menu {
 body.dark .mobile-menu a {
   color: #00eaff;
 }
+
