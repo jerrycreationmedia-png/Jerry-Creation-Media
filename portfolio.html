@@ -1,0 +1,52 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Portfolio — Jerry Creations Media</title>
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+<body class="light">
+  <header class="site-header">
+    <div class="container nav-inner">
+      <a class="brand" href="index.html"><img src="assets/logo.png" class="brand-logo" alt="logo"><div class="brand-text"><div class="brand-title">JERRY CREATIONS MEDIA</div></div></a>
+      <nav class="nav">
+        <ul class="nav-links">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="portfolio.html" class="active">Portfolio</a></li>
+          <li><a href="testimonials.html">Testimonials</a></li>
+          <li><a href="pricing.html">Pricing</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container">
+    <section class="panel">
+      <h2>Intro Video</h2>
+      <p class="muted">Short intro (YouTube)</p>
+      <div class="video-embed">
+        <iframe src="https://www.youtube.com/embed/e_os_WGRYMY" title="Intro video" allow="autoplay; encrypted-media; picture-in-picture" allowfullscreen></iframe>
+      </div>
+    </section>
+
+    <section class="panel">
+      <h2>Gallery</h2>
+      <div class="gallery-grid">
+        <div class="gallery-item" data-src="assets/slide1.jpg"><img src="assets/slide1.png" alt="Work 1"></div>
+        <div class="gallery-item" data-src="assets/slide2.jpg"><img src="assets/slide2.png" alt="Work 2"></div>
+        <div class="gallery-item" data-src="assets/slide3.jpg"><img src="assets/slide3.png" alt="Work 3"></div>
+        <div class="gallery-item" data-src="assets/slide4.jpg"><img src="assets/slide4.png" alt="Work 4"></div>
+      </div>
+    </section>
+  </main>
+
+  <div id="lightbox" class="lightbox" aria-hidden="true"><img id="lightboxImg" src="" alt="Preview"></div>
+
+  <footer class="site-footer"><div class="container">© <span id="year2"></span> Jerry Creations Media</div></footer>
+  <script src="script.js"></script>
+</body>
+</html>
